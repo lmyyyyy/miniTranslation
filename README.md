@@ -1,9 +1,11 @@
 # 口袋翻译
 口袋翻译 微信小程序
+微信搜索：简e翻译
+
 - 使用百度翻译api
 需要申请 appid 与 key 并在 `api.js` 设置
 
-# 一些 api 要点
+# 项目相关
 ## index 页
 ### navigator
 `navigator` 等同于 `a`链接，通过`navigator`跳转到小程序的其他页面
