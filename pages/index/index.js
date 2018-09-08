@@ -10,13 +10,13 @@ Page({
     result: [],   //译文结果
     curLang: {}   //当前语言
   },
-  onLoad: function (options) {
+  onLoad: function (options) {  //翻译历史页通过 reLaunch 跳转，重新加载
     console.log('onload..')
     console.log(options)
     if (options.query) {
       this.setData({ query: options.query })
+      this.setData({ 'hideClearIcon': false })   //让icon-close显现
     }
-
   }, 
   onShow: function () {
     if (this.data.curLang.lang !== app.globalData.curLang.lang) {
@@ -28,7 +28,7 @@ Page({
   onInput: function (e) {
     //传递用户输入的数据、close的展示跟隐藏
     this.setData({ 'query': e.detail.value })
-    if (this.data.query.length > 0) {   //输入时字体图标隐藏
+    if (this.data.query.length > 0) {   //输入时字体图标出现
       this.setData({ 'hideClearIcon': false })
     } else {
       this.setData({ 'hideClearIcon': true })

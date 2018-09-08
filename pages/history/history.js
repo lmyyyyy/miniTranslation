@@ -27,6 +27,10 @@ Page({
     })
   },
 
+  onClearHistory: function(){
+    this.setData({history: []})  //将显示变为空
+    wx.clearStorage('history')   //并清除Storage历史记录
+  },
   /**
    * 生命周期函数--监听页面隐藏
    */
