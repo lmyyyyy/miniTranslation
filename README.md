@@ -4,6 +4,7 @@
 微信搜索：**简e翻译**
 
 或扫描二维码：
+
 ![](https://evenyao-1257191344.cos.ap-chengdu.myqcloud.com/%E4%BA%8C%E7%BB%B4%E7%A0%81%E5%B0%8F%E7%A8%8B%E5%BA%8F.png)
 
 - 使用百度翻译api
