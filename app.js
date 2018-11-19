@@ -33,14 +33,39 @@ App({
         "index": 4
       },
       {
+        'chs': '德语',
+        'lang': 'de',
+        "index": 5
+      },
+      {
+        'chs': '俄语',
+        'lang': 'ru',
+        "index": 6
+      },
+      {
+        'chs': '泰语',
+        'lang': 'th',
+        "index": 7
+      },
+      {
         'chs': '西班牙语',
         'lang': 'spa',
-        "index": 5
+        "index": 8
       },
       {
         'chs': '阿拉伯语',
         'lang': 'ara',
-        "index": 6
+        "index": 9
+      },
+      {
+        'chs': '意大利语',
+        'lang': 'it',
+        "index": 10
+      },
+      {
+        'chs': '葡萄牙语',
+        'lang': 'pt',
+        "index": 11
       }
     ]
   }
