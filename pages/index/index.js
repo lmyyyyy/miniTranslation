@@ -1,6 +1,8 @@
 //index.js
 //获取应用实例
-import { translate } from '../../utils/api.js'
+
+var translator = require('../../utils/api.js'); 
+
 const app = getApp()
 
 Page({
@@ -15,7 +17,7 @@ Page({
     console.log(options)
     if (options.query) {
       this.setData({ query: options.query })
-      this.setData({ 'hideClearIcon': false })   //让icon-close显现
+      this.setData({ 'hideClearIcon': false })   //输入框有文字，则让icon-close显现
     }
   }, 
   onShow: function () {
@@ -46,12 +48,12 @@ Page({
   onConfirm: function () {
     //翻译
     if (!this.data.query) return  //空文本的时候不进行翻译
-    translate(this.data.query, { from: 'auto', to: this.data.curLang.lang }).then(res => {
+    translator(this.data.query, 'auto', this.data.curLang.lang).then(res => {
       //调用 api.js 里面的 Promise
-      this.setData({ 'result': res.trans_result })
+      this.setData({ 'result': res.target_text })
 
       let history = wx.getStorageSync('history') || []
-      history.unshift({ query: this.data.query, result: res.trans_result[0].dst })
+      history.unshift({ query: this.data.query, result: res.target_text[0].dst })
       history.length = history.length > 10 ? 10 : history.length
       wx.setStorageSync('history', history)
     })

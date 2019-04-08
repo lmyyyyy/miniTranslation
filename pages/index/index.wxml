@@ -1,5 +1,6 @@
  <!--index.wxml-->
 <view class="container">
+
   <view class="change">
      <!-- navigator导航 -->
     <navigator url="/pages/change/change" hover-class="navigator-hover">
@@ -8,8 +9,8 @@
         <text class="iconfont icon-down"></text>
       </block> 
     </navigator>
-
   </view>
+
   <view class="input-area">
     <text class="iconfont icon-close" hidden="{{hideClearIcon}}" bindtap='onTapClose'></text>
     <view class="textarea-wrap">

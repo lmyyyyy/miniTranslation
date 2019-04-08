@@ -12,8 +12,8 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.0.4",
-	"appid": "wx77f49675593346c4",
-	"projectname": "weixin-test",
+	"appid": "wx246e835bbbe7d847",
+	"projectname": "miniTranslation",
 	"isGameTourist": false,
 	"condition": {
 		"search": {

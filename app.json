@@ -7,8 +7,8 @@
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#4b3c96",
-    "navigationBarTitleText": "简 e 翻译",
-    "navigationBarTextStyle": "#fff",
+    "navigationBarTitleText": "小翻译",
+    "navigationBarTextStyle": "black",
     "backgroundColor": "#4b3c96"
   },
   "tabBar": {   
