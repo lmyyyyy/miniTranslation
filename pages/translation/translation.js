@@ -1,9 +1,7 @@
-//index.js
-//获取应用实例
-
-// var translator = require('../../utils/api.js'); 
-
+// pages/translate/translate.js.js
 const app = getApp()
+
+var translator = require('../../utils/api.js');
 
 Page({
   data: {
@@ -19,7 +17,7 @@ Page({
       this.setData({ query: options.query })
       this.setData({ 'hideClearIcon': false })   //输入框有文字，则让icon-close显现
     }
-  }, 
+  },
   onShow: function () {
     if (this.data.curLang.lang !== app.globalData.curLang.lang) {
       this.setData({ curLang: app.globalData.curLang })
@@ -36,13 +34,13 @@ Page({
       this.setData({ 'hideClearIcon': true })
     }
 
-    // console.log('focus')
+    console.log('focus')
   },
   onTapClose: function () {
     //用户点击close的事件
     this.setData({ query: '', hideClearIcon: true })
     //如果不需要保留译文结果，也可以删除
-    this.setData({ result: '' }) 
+    this.setData({ result: '' })
     console.log('clearAll')
   },
   onConfirm: function () {
@@ -57,5 +55,18 @@ Page({
       history.length = history.length > 10 ? 10 : history.length
       wx.setStorageSync('history', history)
     })
+  },
+  onTapTranslate: function() {
+    // //翻译
+    // if (!this.data.query) return  //空文本的时候不进行翻译
+    // translator(this.data.query, 'auto', this.data.curLang.lang).then(res => {
+    //   //调用 api.js 里面的 Promise
+    //   this.setData({ 'result': res.target_text })
+
+    //   let history = wx.getStorageSync('history') || []
+    //   history.unshift({ query: this.data.query, result: res.target_text[0].dst })
+    //   history.length = history.length > 10 ? 10 : history.length
+    //   wx.setStorageSync('history', history)
+    // })
   }
 })
