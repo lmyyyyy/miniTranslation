@@ -1,14 +1,10 @@
-<!--pages/reading/reading.wxml--><!--pages/history/history.wxml-->
-
+<!--pages/reading/reading.wxml-->
 <scroll-view scroll-y class="container">
   <view class="logo-container">
     <image class="logo" src="/imgs/logo.png"></image>
   </view>
-  <view class="history-list">
-    <view class="header">
-    </view>
-    <view class="item" wx:for="{{history}}" wx:key="index" bindtap='onTapItem' data-query="{{item.query}}" data-langId="{{item.langIndex}}">
-      <view class="query">{{item.query}}</view>
+  <view class="essay-list">
+    <view class="item" wx:for="{{essayList}}" wx:key="index" bindtap='onTapItem' data-langId="{{item.langIndex}}">
       <view class="result">{{item.result}}</view>
     </view>
   </view>

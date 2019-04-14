@@ -1,28 +1,17 @@
 /* pages/reading/reading.wxss */
 
-.history-list {
+.essay-list {
   display: flex;
   flex-direction: column;
   padding: 40rpx;
 }
-.header {
-  display: flex;
-}
-.title {
-  flex:1;
-  font-size: 26rpx;
-  color: #8995a1;
-}
+
 .logo {
   width: 200rpx;
-  height: 80rpx; 
+  height: 80rpx;
   margin-left: 280rpx;
 }
-.icon-close {
-  margin-left: auto;
-  color: #aaa;
-  font-size: 26rpx;
-}
+
 .item {
   margin-top: 40rpx;
 }

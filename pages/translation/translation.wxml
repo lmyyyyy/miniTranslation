@@ -1,7 +1,7 @@
 <!--pages/translate/translate.wxml-->
 <view class="container">
   <view class="logo-container">
-    <image class="logo" src="/imgs/logo.png"></image>
+    <image class="logo" src="/imgs/logo.png" />
   </view>
   <view class="divline" />
   <view class="change">

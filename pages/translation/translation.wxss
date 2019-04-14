@@ -21,7 +21,7 @@
 .divline{
  background: #0033ff35;
  width: 100%;
- height: 8rpx;
+ height: 5rpx;
 }
 .input-area {
   position: relative;
