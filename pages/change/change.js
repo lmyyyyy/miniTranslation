@@ -15,6 +15,6 @@ Page({
     wx.setStorageSync('language', langObj)
     this.setData({ 'curLang': langObj })
     app.globalData.curLang = langObj
-    wx.switchTab({ url: '/pages/index/index' })  //跳转页面
+    wx.switchTab({ url: '/pages/translate/translate' })  //跳转页面
   }
 })

@@ -4,7 +4,7 @@
   <view class="change">
      <!-- navigator导航 -->
     <navigator url="/pages/change/change" hover-class="navigator-hover">
-      <block>
+      <block class="">
         <text>翻译成{{curLang.chs}}</text>
         <text class="iconfont icon-down"></text>
       </block> 
@@ -14,7 +14,7 @@
   <view class="input-area">
     <text class="iconfont icon-close" hidden="{{hideClearIcon}}" bindtap='onTapClose'></text>
     <view class="textarea-wrap">
-      <textarea placeholder='请输入要翻译的文本' placeholder-style='color: #8995a1'  bindinput='onInput' bindconfirm='onConfirm' bindblur='onConfirm'  value="{{query}}"></textarea>
+      <textarea placeholder='请输入要翻译的文本' placeholder-style='color: #8995a1'  bindinput='onInput'          bindconfirm='onConfirm' bindblur='onConfirm'  value="{{query}}"></textarea>
     </view>
     
     <view class="text-area">

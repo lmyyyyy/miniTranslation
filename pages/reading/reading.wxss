@@ -1,0 +1,25 @@
+/* pages/reading/reading.wxss */
+
+.essay-list {
+  display: flex;
+  flex-direction: column;
+  padding: 40rpx;
+}
+
+.logo {
+  width: 200rpx;
+  height: 80rpx;
+  margin-left: 280rpx;
+}
+
+.item {
+  margin-top: 40rpx;
+}
+
+.item .query {
+  color: #8995a1;
+}
+
+.item .result {
+  margin-top: 16rpx;
+}

@@ -23,7 +23,7 @@ Page({
 
   onTapItem: function (e) {
     wx.reLaunch({
-      url: `/pages/index/index?query=${e.currentTarget.dataset.query}`
+      url: `/pages/translation/translation?query=${e.currentTarget.dataset.query}`
     })
   },
 

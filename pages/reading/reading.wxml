@@ -1,0 +1,11 @@
+<!--pages/reading/reading.wxml-->
+<scroll-view scroll-y class="container">
+  <view class="logo-container">
+    <image class="logo" src="/imgs/logo.png"></image>
+  </view>
+  <view class="essay-list">
+    <view class="item" wx:for="{{essayList}}" wx:key="index" bindtap='onTapItem' data-langId="{{item.langIndex}}">
+      <view class="result">{{item.result}}</view>
+    </view>
+  </view>
+</scroll-view>

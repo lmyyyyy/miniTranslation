@@ -1,0 +1,70 @@
+/* pages/translate/translate.wxss */
+
+.change {
+  color: #8995a1;
+  font-size: 24 rpx;
+  padding: 20rpx 40rpx 0 310rpx;
+  display: flex;
+  align-items: center;
+}.change .text {
+  font-size: 14px;
+  color: #335470;
+}.change .icon-down {
+  color: #335470;
+  font-size: 20rpx;
+}
+.logo {
+  width: 200rpx;
+  height: 80rpx; 
+  margin-left: 280rpx;
+}
+.divline{
+ background: #0033ff35;
+ width: 100%;
+ height: 5rpx;
+}
+.input-area {
+  position: relative;
+}
+.textarea-wrap {
+  margin: 20rpx;
+  border: 1px solid #c7cee0;
+}
+.input-area textarea {
+  background-color: #fff;
+  padding: 30rpx 0 30rpx 30rpx;
+  width: calc(100% - 48rpx);
+  margin: 0;
+  box-sizing: border-box;
+}
+.input-area .icon-close {
+  /* position: absolute; */
+  /* right: 12rpx; */
+  margin-top: 200rpx;
+  z-index: 100;
+  font-size: 40rpx;
+  color: #888;
+}
+
+.input-area .text-area {
+  min-height: 80rpx;
+  padding: 30rpx;
+  margin: 20rpx;
+  border: 1px solid #c7cee0;
+}
+
+.input-area .text-title {
+  font-size: 28rpx;
+  color: #8995a1;
+}
+
+.input-area .text-result {
+  /* padding: 20rpx 0; */
+  margin: 20rpx;
+  border: 1px solid #081229;
+}
+.img-icon-down {
+  width: 40rpx;
+  height: 30rpx; 
+  margin-left: 350rpx;
+}

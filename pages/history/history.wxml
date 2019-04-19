@@ -1,6 +1,7 @@
 <!--pages/history/history.wxml-->
 
 <scroll-view scroll-y class="container">
+  <image class="logo-index" src="/imgs/logo-index.png" />
   <view class="history-list">
     <view class="header">
       <text class="title">翻译历史</text>
@@ -12,5 +13,3 @@
     </view>
   </view>
 </scroll-view>
-
-

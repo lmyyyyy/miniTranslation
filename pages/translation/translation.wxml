@@ -1,0 +1,28 @@
+<!--pages/translate/translate.wxml-->
+<view class="container">
+  <view class="logo-container">
+    <image class="logo" src="/imgs/logo.png" />
+  </view>
+  <view class="divline" />
+  <view class="change">
+     <!-- navigator导航 -->
+    <navigator url="/pages/change/change" hover-class="navigator-hover">
+      <block>
+        <text class="iconfont text">译成{{curLang.chs}}</text>
+        <text class="iconfont icon-down"></text>
+      </block> 
+    </navigator>
+  </view>
+  <view class="input-area">
+    <text class="iconfont icon-close" hidden="{{hideClearIcon}}" bindtap='onTapClose'></text>
+    <view class="textarea-wrap">
+      <textarea placeholder='请输入要翻译的文本' placeholder-style='color: #8995a1'  bindinput='onInput' bindconfirm='onConfirm' bindblur='onConfirm'  value="{{query}}"></textarea>
+    </view>
+    <image class="img-icon-down" src="/imgs/img-icon-down.png"  bindtap="onTapTranslate" />
+    <view class="text-area">
+      <view class="text-result" wx:for="{{result}}" wx:key="index">
+        <text selectable="true">hhhhhh{{item.dst}}</text>
+      </view>
+    </view>
+  </view>
+</view>
